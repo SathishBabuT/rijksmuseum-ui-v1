@@ -1,0 +1,41 @@
+<!-- <div class="row">
+    <div *ngFor="let data of collectionData;" class="col-3">
+      <div class="card">
+        <img src="{{data.webImage.url}}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{data.title}}</h5>
+        </div>
+      </div>
+    </div>
+</div> -->
+<div *ngIf="collectionData && collectionData.length !== 0">
+  <div class="col-sm-12">
+    <div class="offset-sm-9 col-sm-3" style="display: flex;">
+      <label class="offset-sm-5 col-sm-2">Sort by</label>
+      <div class="col-sm-2 dropdown" style="margin-left: 12px; position: relative; top: -5px;">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          Relevance
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item">Kind of work</a>
+          <a class="dropdown-item">Chronologically old > new</a>
+          <a class="dropdown-item">Chronologically new > old</a>
+          <a class="dropdown-item">Artist A > Z</a>
+          <a class="dropdown-item">Artist z > A</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="custom-row">
+    <figure *ngFor="let data of collectionData;" class="custom-column">
+      <img src="{{data.webImage.url}}" style="width: 100%;">
+      <figcaption>
+        <h5><a (click)="retrieveImgData(data)" style="cursor:pointer;">{{data.title}}</a></h5>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+<div *ngIf="collectionData && collectionData.length === 0">
+  <h5 style="color: black;">No results found!!</h5>
+</div>

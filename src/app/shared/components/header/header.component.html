@@ -1,0 +1,21 @@
+<div class="col-sm-12" style="background-image: url({{imgSource}}); background-repeat: no-repeat; background-size: cover; background-position: center;" [ngStyle]="{'height.px': height}">
+    <div style="display: flex; position: relative; top: 20px; color:white;">
+        <div class="col-sm-2">
+            <a (click)="redirectToSearchPage()" *ngIf="callFrom === 'imageDetailsMain'" style="cursor: pointer; margin-left: 10%; color: red;"> Back to Search</a>
+        </div>
+        <div class="offset-sm-6 col-sm-4" style="display:flex;">
+            <div class="col-sm-3 headerOptions">
+                <a (click)="showLanguage()">Language</a>
+            </div>
+            <div class="col-sm-3">
+                <a (click)="invokeLogin()">Login</a>
+            </div>
+            <div class="col-sm-3">
+                <a (click)="invokeGiftShop()">Giftshop</a>
+            </div>
+            <div class="col-sm-3">
+                <a (click)="bookTickets()">Tickets</a>
+            </div>
+        </div>
+    </div> 
+</div>
