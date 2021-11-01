@@ -1,4 +1,4 @@
-# RijksmuseumApp
+# Rijksmuseum App
 
 This application was created to show the list of masterpieces which are present in the museum. It gives an overview to the audience about the available masterpieces.
 
