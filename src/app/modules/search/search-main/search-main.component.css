@@ -1,0 +1,11 @@
+.custom-search-form {
+    width: 41%;
+    position: relative;
+    top: 7px;
+    left: 3%;
+}
+
+.custom-search-button {
+    color: white;
+    background-color: #dc3545;
+}

@@ -1,11 +1,11 @@
 <app-header [callFrom] = "callFrom"></app-header>
 <nav class="navbar navbar-dark bg-dark"> <!-- we can use div tag instead of nav tag here -->
     <div class="container-fluid">
-      <form class="d-flex" (ngSubmit)="searchOnKeyword(searchKey)" style="width: 41%; position: relative; top: 7px; left: 3%;"> <!--check this line whether it is required-->
+      <form class="d-flex" (ngSubmit)="searchOnKeyword(searchKey)" class="custom-search-form">
         <div class="input-group mb-3">
           <!-- <i class="fa fa-search fa-lg"></i> -->
           <input type="search" placeholder="Type title here..." [(ngModel)]="searchKey" class="form-control" name="searchKey">
-          <button class="btn btn-outline-secondary" (click)="searchOnKeyword(searchKey)" type="button" style="color: white; background-color: #dc3545;">Search</button>
+          <button class="btn btn-outline-secondary custom-search-button" (click)="searchOnKeyword(searchKey)" type="button">Search</button>
         </div>
       </form>
     </div>

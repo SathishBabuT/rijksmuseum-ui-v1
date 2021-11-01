@@ -1,0 +1,11 @@
+.detailed-view-container {
+    background-color: black;
+    min-height: 100px;
+    height: auto;
+    color: white;
+}
+
+.detailed-view-content {
+    margin: 0% 14%;
+    padding: 1%;
+}

@@ -1,3 +1,18 @@
 .label-bold {
     font-weight: bold;
 }
+
+.article-border {
+    display: flex;
+    margin: 0% 14%;
+    border-top: 1px solid lightgrey;
+}
+
+.mt-2 {
+    margin-top: 2%;
+}
+
+.info-div {
+    display: flex;
+    margin-bottom: 2%;
+}

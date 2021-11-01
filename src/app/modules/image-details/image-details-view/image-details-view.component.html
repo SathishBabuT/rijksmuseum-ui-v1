@@ -1,40 +1,40 @@
-<article style="display: flex; margin: 0% 14%; border-top: 1px solid lightgrey;" *ngIf="selectedImageObj && selectedImageObj.artObject">
-    <div class="col-sm-4" style="margin-top: 2%;">
+<article class="article-border" *ngIf="selectedImageObj && selectedImageObj.artObject">
+    <div class="col-sm-4 mt-2">
         <h5>Identification</h5>
     </div>
-    <div class="col-sm-6" style="margin-top: 2%;">
-        <div style="display: flex; margin-bottom: 2%;">
+    <div class="col-sm-6 mt-2">
+        <div class="info-div">
             <label class="col-sm-6 label-bold">Title</label>
             <label class="col-sm-6">{{selectedImageObj.artObject.title}}</label>
         </div>
-        <div style="display: flex; margin-bottom: 2%;">
+        <div class="info-div">
             <label class="col-sm-6 label-bold">Object Type</label>
             <label class="col-sm-6">{{selectedImageObj.artObject.objectType}}</label>
         </div>
-        <div style="display: flex; margin-bottom: 2%;">
+        <div class="info-div">
             <label class="col-sm-6 label-bold">Object Number</label>
             <label class="col-sm-6">{{selectedImageObj.artObject.objectNumber}}</label>
         </div>
-        <div style="display: flex; margin-bottom: 2%;">
+        <div class="info-div">
             <label class="col-sm-6 label-bold">Description</label>
             <label class="col-sm-6">{{selectedImageObj.artObject.description}}</label>
         </div>
     </div>
 </article>
-<article style="display: flex; margin: 0% 14%; border-top: 1px solid lightgrey;" *ngIf="selectedImageObj && selectedImageObj.artObject">
-    <div class="col-sm-4" style="margin-top: 2%;">
+<article class="article-border" *ngIf="selectedImageObj && selectedImageObj.artObject">
+    <div class="col-sm-4 mt-2">
         <h5>Creation</h5>
     </div>
-    <div class="col-sm-6" style="margin-top: 2%;">
-        <div style="display: flex; margin-bottom: 2%;">
+    <div class="col-sm-6 mt-2">
+        <div class="info-div">
             <label class="col-sm-6 label-bold">Artist</label>
             <label class="col-sm-6">{{selectedImageObj.artObject.principalMaker}}</label>
         </div>
-        <div style="display: flex; margin-bottom: 2%;">
+        <div class="info-div">
             <label class="col-sm-6 label-bold">Place</label>
             <label class="col-sm-6">{{selectedImageObj.artObject.place}}</label>
         </div>
-        <div style="display: flex; margin-bottom: 2%;">
+        <div class="info-div">
             <label class="col-sm-6 label-bold">Dating</label>
             <label class="col-sm-6">{{selectedImageObj.artObject.dating.presentingDate}}</label>
         </div>

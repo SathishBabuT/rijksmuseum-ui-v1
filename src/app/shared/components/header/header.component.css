@@ -1,3 +1,25 @@
-.headerOptions > a {
+.header-options > a {
     cursor: pointer;
+}
+
+.header-options > a:hover {
+    text-decoration: underline;
+}
+
+.menu-actions {
+    display: flex;
+    position: relative;
+    top: 20px;
+    color:white;
+}
+
+.customize-navigation-link {
+    cursor: pointer;
+    margin-left: 10%;
+    color: red;
+    text-decoration: none;
+}
+
+.customize-navigation-link:hover {
+    text-decoration: underline;
 }

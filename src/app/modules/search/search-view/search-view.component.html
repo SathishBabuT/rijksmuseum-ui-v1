@@ -1,18 +1,8 @@
-<!-- <div class="row">
-    <div *ngFor="let data of collectionData;" class="col-3">
-      <div class="card">
-        <img src="{{data.webImage.url}}" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">{{data.title}}</h5>
-        </div>
-      </div>
-    </div>
-</div> -->
 <div *ngIf="collectionData && collectionData.length !== 0">
   <div class="col-sm-12">
-    <div class="offset-sm-6 col-sm-3" style="display: flex;">
+    <div class="offset-sm-9 col-sm-3" style="display: flex;">
       <label class="offset-sm-5 col-sm-2">Sort by</label>
-      <div class="col-sm-2 dropdown" style="margin-left: 12px; position: relative; top: -5px;">
+      <div class="col-sm-2 dropdown custom-dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
           Relevance
         </button>
@@ -25,7 +15,7 @@
         </div>
       </div>
     </div>
-      <div class="col-sm-3">
+      <!-- <div class="col-sm-3">
         <ng-multiselect-dropdown
           name="multiSelectDropdown" ngDefaultControl
           [settings]="dropdownSettings"
@@ -35,12 +25,12 @@
           (onSelectAll)="onSelectAll($event)"
         >
         </ng-multiselect-dropdown>
-      </div>
+      </div> --> <!--Filter dropdown UI changes-->
   </div>
   
   <div class="custom-row">
     <figure *ngFor="let data of collectionData;" class="custom-column">
-      <img src="{{data.webImage.url}}" style="width: 100%;">
+      <img src="{{data.webImage.url}}">
       <figcaption>
         <h5><a (click)="retrieveImgData(data)" style="cursor:pointer;">{{data.title}}</a></h5>
       </figcaption>

@@ -1,19 +1,19 @@
 <div class="col-sm-12" style="background-image: url({{imgSource}}); background-repeat: no-repeat; background-size: cover;" [ngStyle]="{'height': callFrom === 'searchMain' ? '135px' : '600px', 'background-position': callFrom === 'searchMain' ? 'center' : 'unset'}">
-    <div style="display: flex; position: relative; top: 20px; color:white;">
+    <div class="menu-actions">
         <div class="col-sm-2">
-            <a (click)="redirectToSearchPage()" *ngIf="callFrom === 'imageDetailsMain'" style="cursor: pointer; margin-left: 10%; color: red;"> Back to Search</a>
+            <a class="customize-navigation-link" (click)="redirectToSearchPage()" *ngIf="callFrom === 'imageDetailsMain'"> Back to Search</a>
         </div>
         <div class="offset-sm-6 col-sm-4" style="display:flex;">
-            <div class="col-sm-3 headerOptions">
+            <div class="col-sm-3 header-options">
                 <a (click)="showLanguage()">Language</a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 header-options">
                 <a (click)="invokeLogin()">Login</a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 header-options">
                 <a (click)="invokeGiftShop()">Giftshop</a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 header-options">
                 <a (click)="bookTickets()">Tickets</a>
             </div>
         </div>
