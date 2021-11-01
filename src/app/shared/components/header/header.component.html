@@ -1,4 +1,4 @@
-<div class="col-sm-12" style="background-image: url({{imgSource}}); background-repeat: no-repeat; background-size: cover; background-position: center;" [ngStyle]="{'height.px': height}">
+<div class="col-sm-12" style="background-image: url({{imgSource}}); background-repeat: no-repeat; background-size: cover;" [ngStyle]="{'height': callFrom === 'searchMain' ? '135px' : '600px', 'background-position': callFrom === 'searchMain' ? 'center' : 'unset'}">
     <div style="display: flex; position: relative; top: 20px; color:white;">
         <div class="col-sm-2">
             <a (click)="redirectToSearchPage()" *ngIf="callFrom === 'imageDetailsMain'" style="cursor: pointer; margin-left: 10%; color: red;"> Back to Search</a>

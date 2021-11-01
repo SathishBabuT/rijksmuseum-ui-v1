@@ -10,16 +10,14 @@ export class HeaderComponent implements OnInit {
 
   @Input() imgSource: any = '../../../../assets/rijksmuseum.jpg';
   @Input() callFrom: any;
-  height = 135;
+  
   constructor(private router: Router) { }
 
   ngOnInit(): void {
 
   }
   ngOnChanges() {
-    if(this.callFrom === "imageDetailsMain") {
-      this.height = 600;
-    }
+
   }
 
   showLanguage() {

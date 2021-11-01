@@ -1,5 +1,5 @@
 <app-header [imgSource]="webImageUrl" [callFrom]="callFrom"></app-header>
-<div style="background-color: black; min-height: 100px; height: auto; color: white;">
+<div style="background-color: black; min-height: 100px; height: auto; color: white;" *ngIf="selectedImageObj && selectedImageObj.artObject">
     <div style="margin: 0% 14%; padding: 1%;">
         <h5>{{selectedImageObj.artObject.longTitle}}</h5>
         <p>{{selectedImageObj.artObject.description}}</p>
