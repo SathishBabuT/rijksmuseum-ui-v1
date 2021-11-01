@@ -19,17 +19,17 @@ Under Angular project I have created two separate folders (check inside 'app') t
 
 ## Implemented Features
 
-ArtObjects display
-Search artObject using title (currently it works only based on fullmatch)
-Detailed information about selected artObject
-Back option navigation (Detailed screen to Search screen)
-Display spinner when artObject retrival is in progress
-Data caching server side
+* ArtObjects display
+* Search artObject using title (currently it works only based on fullmatch)
+* Detailed information about selected artObject
+* Back option navigation (Detailed screen to Search screen)
+* Display spinner when artObject retrival is in progress
+* Data caching server side
 
 ## Incompleted or InProgress Features
 
-Sort based on Relevance/Kind of work/Chronological order
-Filter based on Maker/Type
+* Sort based on Relevance/Kind of work/Chronological order
+* Filter based on Maker/Type
 
 ## Code Checkout & Server Start
 
